@@ -133,12 +133,6 @@
             key-positions = <6 8>;
             layers = <1 0 3>;
         };
-
-        tog-num {
-            bindings = <&tog 4>;
-            key-positions = <18 19>;
-            layers = <0 1 4>;
-        };
     };
 
     keymap {
