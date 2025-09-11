@@ -191,10 +191,10 @@
         Homerow {
             display-name = "homerow";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 7 DELETE
-&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B  &none  &none  &kp N        &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
-&sl 7      &kp LGUI         &kp LALT         &lt 4 ESCAPE         &kp SPACE          &mo 6                &lt 6 ENTER  &mac_bksp           &mo 3                 &kp RIGHT_ALT     &kp RIGHT_GUI        &tog 1
+&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                    &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 7 DELETE
+&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                    &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B      &none  &none  &kp N        &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
+&sl 7      &kp LGUI         &kp LALT         &lt 4 ESCAPE         &kp SPACE          &lt 6 TAB                &lt 6 ENTER  &mac_bksp           &mo 3                 &kp RIGHT_ALT     &kp RIGHT_GUI        &tog 1
             >;
 
             sensor-bindings =
