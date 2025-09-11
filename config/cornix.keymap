@@ -136,10 +136,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB    &kp Q     &kp W     &kp E         &kp R      &kp T                            &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 5 DEL
-&kp LCTRL  &kp A     &kp S     &kp D         &kp F      &kp G                            &kp H      &kp J     &kp K      &kp L          &kp SEMI       &kp SQT
-&kp LSHFT  &lt 2 Z   &kp X     &kp C         &kp V      &kp B        &kp C_MUTE  &tog 1  &kp N      &kp M     &kp COMMA  &kp DOT        &lt 2 SLASH    &kp RSHFT
-&none      &kp LGUI  &kp LALT  &lt 4 ESCAPE  &kp SPACE  &kp LC(TAB)                      &kp ENTER  &kp BSPC  &mo 3      &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&kp TAB    &kp Q     &kp W     &kp E         &kp R      &kp T                      &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 5 DEL
+&kp LCTRL  &kp A     &kp S     &kp D         &kp F      &kp G                      &kp H      &kp J     &kp K      &kp L          &kp SEMI       &kp SQT
+&kp LSHFT  &lt 2 Z   &kp X     &kp C         &kp V      &kp B        &none  &none  &kp N      &kp M     &kp COMMA  &kp DOT        &lt 2 SLASH    &kp RSHFT
+&none      &kp LGUI  &kp LALT  &lt 4 ESCAPE  &kp SPACE  &kp LC(TAB)                &kp ENTER  &kp BSPC  &mo 3      &kp RIGHT_ALT  &kp RIGHT_GUI  &tog 1
             >;
 
             sensor-bindings =
@@ -150,10 +150,10 @@
         Homerow {
             display-name = "homerow";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                      &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 5 DELETE
-&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                      &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B  &kp C_MUTE  &tog 0  &kp N        &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
-&none      &kp LGUI         &kp LALT         &lt 4 ESCAPE         &kp SPACE          &mo 6                      &lt 6 ENTER  &kp BSPC            &mo 3                 &kp RIGHT_ALT     &kp RIGHT_GUI        &none
+&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 5 DELETE
+&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B  &none  &none  &kp N        &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
+&none      &kp LGUI         &kp LALT         &lt 4 ESCAPE         &kp SPACE          &mo 6                &lt 6 ENTER  &kp BSPC            &mo 3                 &kp RIGHT_ALT     &kp RIGHT_GUI        &tog 1
             >;
 
             sensor-bindings =
@@ -172,10 +172,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans  &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP                    &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &kp INSERT     &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans                         &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP                    &trans      &trans        &trans           &trans      &trans  &kp C_MUTE
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN                  &kp LEFT    &kp DOWN      &kp UP           &kp RIGHT   &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &kp INSERT     &trans  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &trans                         &trans      &trans        &trans           &trans      &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -213,10 +213,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp MINUS       &kp N1    &kp N2        &kp N3     &kp N4        &kp N5                    &kp F1         &kp F2         &kp F3  &kp F4   &kp F5   &kp F6
-&kp LS(PLUS)    &kp N6    &kp N7        &kp N8     &kp N9        &kp N0                    &kp F7         &kp F8         &kp F9  &kp F10  &kp F11  &kp F12
-&kp LEFT_SHIFT  &kp FSLH  &kp LS(STAR)  &kp EQUAL  &kp LS(PLUS)  &kp MINUS  &none  &tog 4  &kp LS(PRCNT)  &none          &none   &none    &none    &trans
-&none           &none     &none         &trans     &trans        &trans                    &trans         &kp BACKSPACE  &trans  &none    &none    &none
+&none  &kp LS(STAR)  &kp N8  &kp N2  &kp N3  &kp MINUS                    &none   &none          &none      &none     &none     &none
+&none  &kp FSLH      &kp N4  &kp N5  &kp N6  &kp LS(PLUS)                 &none   &kp LSHFT      &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp PERCENT   &kp N7  &kp N8  &kp N9  &kp EQUAL     &none  &tog 4  &none   &none          &none      &none     &none     &trans
+&none  &none         &none   &trans  &trans  &trans                       &trans  &kp BACKSPACE  &trans     &none     &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
