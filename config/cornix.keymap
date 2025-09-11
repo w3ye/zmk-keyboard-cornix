@@ -110,7 +110,20 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        tog_mix {
+            bindings = <&tog 4>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 3>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -126,10 +139,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB    &kp Q     &kp W     &kp E         &kp R      &kp T                         &kp Y      &kp U     &kp I            &kp O          &kp P          &kp DEL
-&kp LCTRL  &kp A     &kp S     &kp D         &kp F      &kp G                         &kp H      &kp J     &kp K            &kp L          &kp SEMI       &kp SQT
-&kp LSHFT  &lt 2 Z   &kp X     &kp C         &kp V      &kp B      &kp C_MUTE  &none  &kp N      &kp M     &kp COMMA        &kp DOT        &lt 2 SLASH    &kp RSHFT
-&none      &kp LGUI  &kp LALT  &lt 4 ESCAPE  &kp SPACE  &kp LC(N)                     &kp ENTER  &kp BSPC  &lt 3 BACKSPACE  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&kp TAB    &kp Q     &kp W     &kp E         &kp R      &kp T                          &kp Y      &kp U     &kp I            &kp O          &kp P          &kp DEL
+&kp LCTRL  &kp A     &kp S     &kp D         &kp F      &kp G                          &kp H      &kp J     &kp K            &kp L          &kp SEMI       &kp SQT
+&kp LSHFT  &lt 2 Z   &kp X     &kp C         &kp V      &kp B      &kp C_MUTE  &tog 1  &kp N      &kp M     &kp COMMA        &kp DOT        &lt 2 SLASH    &kp RSHFT
+&none      &kp LGUI  &kp LALT  &lt 4 ESCAPE  &kp SPACE  &kp LC(N)                      &kp ENTER  &kp BSPC  &lt 3 BACKSPACE  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
             >;
 
             sensor-bindings =
@@ -140,10 +153,10 @@
         Homerow {
             display-name = "homerow";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                          &kp Y      &kp U               &kp I                 &kp O             &kp P                &kp DEL
-&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                          &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B      &kp C_MUTE  &tog 0  &kp N      &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
-&none      &kp LGUI         &kp LALT         &kp ESC              &kp SPACE          &kp LC(N)                      &kp ENTER  &kp BSPC            &mo 3                 &none             &none                &none
+&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                      &kp Y        &kp U               &kp I                 &kp O             &kp P                &kp DEL
+&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                      &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B  &kp C_MUTE  &tog 0  &kp N        &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
+&none      &kp LGUI         &kp LALT         &lt 4 ESCAPE         &kp SPACE          &mo 6                      &lt 6 ENTER  &kp BSPC            &mo 3                 &kp RIGHT_ALT     &kp RIGHT_GUI        &none
             >;
 
             sensor-bindings =
@@ -232,10 +245,10 @@
 
         Macshortcut {
             bindings = <
-&trans  &kt LG(Q)  &mt LG(LS(NUMBER_2)) LG(W)  &trans  &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans                      &trans  &trans                                     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans                      &trans  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans                      &trans  &kp LG(SPACE)                              &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kt LG(Q)  &mt LG(LS(NUMBER_2)) LG(W)  &trans               &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))  &kp LG(LS(N5))                         &trans                   &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(A)  &trans                      &trans               &trans                                     &trans                                 &trans                   &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &trans                      &mt LG(LS(C)) LG(C)  &trans                                     &trans                 &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans                      &trans               &kp LG(SPACE)                              &kp LG(LS(LC(SPACE)))                  &trans                   &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
