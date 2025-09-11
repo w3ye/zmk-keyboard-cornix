@@ -136,7 +136,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB    &kp Q     &kp W     &kp E         &kp R      &kp T                      &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 5 DEL
+&kp TAB    &kp Q     &kp W     &kp E         &kp R      &kp T                      &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 7 DEL
 &kp LCTRL  &kp A     &kp S     &kp D         &kp F      &kp G                      &kp H      &kp J     &kp K      &kp L          &kp SEMI       &kp SQT
 &kp LSHFT  &lt 2 Z   &kp X     &kp C         &kp V      &kp B        &none  &none  &kp N      &kp M     &kp COMMA  &kp DOT        &lt 2 SLASH    &kp RSHFT
 &none      &kp LGUI  &kp LALT  &lt 4 ESCAPE  &kp SPACE  &kp LC(TAB)                &kp ENTER  &kp BSPC  &mo 3      &kp RIGHT_ALT  &kp RIGHT_GUI  &tog 1
@@ -150,7 +150,7 @@
         Homerow {
             display-name = "homerow";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 5 DELETE
+&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 7 DELETE
 &kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
 &kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B  &none  &none  &kp N        &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
 &none      &kp LGUI         &kp LALT         &lt 4 ESCAPE         &kp SPACE          &mo 6                &lt 6 ENTER  &kp BSPC            &mo 3                 &kp RIGHT_ALT     &kp RIGHT_GUI        &tog 1
@@ -247,6 +247,17 @@
 &trans  &kp LG(Z)  &trans                      &mt LG(LS(C)) LG(C)  &trans                                     &trans                 &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans                      &trans               &kp LG(SPACE)                              &kp LG(LS(LC(SPACE)))                  &trans                   &trans  &trans  &trans  &trans  &trans
             >;
+        };
+
+        Func {
+            bindings = <
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                  &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &trans   &trans   &trans  &trans  &trans                   &trans  &trans     &trans     &trans    &trans    &trans
+            >;
+
+            label = "func";
         };
     };
 };
