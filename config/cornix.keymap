@@ -133,6 +133,36 @@
             key-positions = <6 8>;
             layers = <1 0 3>;
         };
+
+        desktop-1 {
+            bindings = <&kp LC(N1)>;
+            key-positions = <12 1>;
+            layers = <1>;
+        };
+
+        desktop-2 {
+            bindings = <&kp LC(NUMBER_2)>;
+            key-positions = <12 2>;
+            layers = <1>;
+        };
+
+        desktop-3 {
+            bindings = <&kp LC(NUMBER_3)>;
+            key-positions = <12 3>;
+            layers = <1>;
+        };
+
+        desktop-4 {
+            bindings = <&kp LC(NUMBER_4)>;
+            key-positions = <12 4>;
+            layers = <1>;
+        };
+
+        desktop-5 {
+            bindings = <&kp LC(N5)>;
+            key-positions = <12 5>;
+            layers = <1>;
+        };
     };
 
     keymap {
