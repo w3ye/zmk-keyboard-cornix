@@ -127,27 +127,29 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB    &kp Q     &kp W     &kp E    &kp R      &kp T                    &kp Y      &kp U     &kp I            &kp O    &kp P        &kp DEL
-&kp LCTRL  &kp A     &kp S     &kp D    &kp F      &kp G                    &kp H      &kp J     &kp K            &kp L    &kp SEMI     &kp SQT
-&kp LSHFT  &lt 2 Z   &kp X     &kp C    &kp V      &kp B      &none  &none  &kp N      &kp M     &kp COMMA        &kp DOT  &lt 2 SLASH  &kp RSHFT
-&none      &kp LGUI  &kp LALT  &kp ESC  &kp SPACE  &kp LC(N)                &kp ENTER  &kp BSPC  &lt 3 BACKSPACE  &none    &none        &none
+&kp TAB    &kp Q     &kp W     &kp E    &kp R      &kp T                         &kp Y      &kp U     &kp I            &kp O    &kp P        &kp DEL
+&kp LCTRL  &kp A     &kp S     &kp D    &kp F      &kp G                         &kp H      &kp J     &kp K            &kp L    &kp SEMI     &kp SQT
+&kp LSHFT  &lt 2 Z   &kp X     &kp C    &kp V      &kp B      &kp C_MUTE  &none  &kp N      &kp M     &kp COMMA        &kp DOT  &lt 2 SLASH  &kp RSHFT
+&none      &kp LGUI  &kp LALT  &kp ESC  &kp SPACE  &kp LC(N)                     &kp ENTER  &kp BSPC  &lt 3 BACKSPACE  &none    &none        &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_NEXT C_PREV>;
         };
 
         Homerow {
             display-name = "homerow";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                     &kp Y      &kp U               &kp I                 &kp O             &kp P                &kp DEL
-&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                     &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B      &none  &tog 0  &kp N      &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
-&none      &kp LGUI         &kp LALT         &kp ESC              &kp SPACE          &kp LC(N)                 &kp ENTER  &kp BSPC            &mo 3                 &none             &none                &none
+&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                          &kp Y      &kp U               &kp I                 &kp O             &kp P                &kp DEL
+&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                          &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT  &lt 2 Z          &kp X            &kp C                &kp V              &kp B      &kp C_MUTE  &tog 0  &kp N      &kp M               &kp COMMA             &kp DOT           &lt 2 SLASH          &kp RSHFT
+&none      &kp LGUI         &kp LALT         &kp ESC              &kp SPACE          &kp LC(N)                      &kp ENTER  &kp BSPC            &mo 3                 &none             &none                &none
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp C_NEXT C_PREVIOUS>;
         };
 
         Nav {
@@ -191,8 +193,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Mix_layer {
-            display-name = "Mix";
+        Num {
+            display-name = "num";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
@@ -202,10 +204,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3   &kp F4  &kp F5                         &kp F6    &kp F7     &kp F8     &kp F9    &kp F10  &kp F11
-&trans  &kp N5  &kp N4  &kp N3   &kp N2  &kp N1                         &kp BSPC  &kp MINUS  &kp EQUAL  &kp PLUS  &kp DQT  &kp F12
-&trans  &kp N6  &kp N7  &kp N8   &kp N9  &kp N0         &trans  &trans  &kp TAB   &kp INS    &kp HOME   &kp END   &trans   &trans
-&none   &none   &none   &kp TAB  &trans  &kp BACKSPACE                  &trans    &trans     &kp N3     &none     &none    &none
+&kp MINUS       &kp N1    &kp N2        &kp N3     &kp N4        &kp N5                    &kp F1         &kp F2         &kp F3  &kp F4   &kp F5   &kp F6
+&kp LS(PLUS)    &kp N6    &kp N7        &kp N8     &kp N9        &kp N0                    &kp F7         &kp F8         &kp F9  &kp F10  &kp F11  &kp F12
+&kp LEFT_SHIFT  &kp FSLH  &kp LS(STAR)  &kp EQUAL  &kp LS(PLUS)  &kp MINUS  &none  &tog 4  &kp LS(PRCNT)  &none          &none   &none    &none    &trans
+&none           &none     &none         &kp TAB    &trans        &trans                    &trans         &kp BACKSPACE  &trans  &none    &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
