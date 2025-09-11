@@ -106,13 +106,19 @@
         tog_mix {
             bindings = <&tog 4>;
             key-positions = <6 7>;
-            layers = <1 0>;
+            layers = <1 0 4>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
             layers = <1>;
+        };
+
+        tog_symb {
+            bindings = <&tog 3>;
+            key-positions = <6 8>;
+            layers = <1 0 3>;
         };
     };
 
@@ -187,10 +193,10 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE      &kp EXCL       &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                     &trans     &kp MINUS      &kp LS(PLUS)  &trans      &trans         &trans
-&kp LS(TILDE)  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(STAR)                  &trans     &kp LS(TILDE)  &kp EQUAL     &trans      &kp LS(COLON)  &kp LS(DQT)
-&none          &kp LS(LBRC)   &kp LS(RBRC)  &kp LBKT      &kp RBKT      &kp BSLH      &trans  &trans  &trans     &trans         &kp LS(LT)    &kp LS(GT)  &kp LS(QMARK)  &none
-&none          &none          &none         &none         &trans        &trans                        &kp TILDE  &trans         &kp GRAVE     &none       &none          &none
+&kp GRAVE       &kp EXCL       &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                     &trans     &kp MINUS      &kp LS(PLUS)  &trans      &kp BACKSLASH  &kp PIPE
+&kp LS(TILDE)   &kp LS(CARET)  &kp LS(AMPS)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(STAR)                  &trans     &kp LS(TILDE)  &kp EQUAL     &trans      &kp LS(COLON)  &kp LS(DQT)
+&kp LEFT_SHIFT  &kp LS(LBRC)   &kp LS(RBRC)  &kp LBKT      &kp RBKT      &kp BSLH      &trans  &trans  &trans     &trans         &kp LS(LT)    &kp LS(GT)  &kp LS(QMARK)  &none
+&none           &none          &none         &none         &trans        &trans                        &kp TILDE  &trans         &kp GRAVE     &none       &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
