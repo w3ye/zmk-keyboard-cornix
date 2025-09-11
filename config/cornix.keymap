@@ -91,7 +91,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        system {
+            if-layers = <4 3>;
+            then-layer = <5>;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -209,7 +216,7 @@
 &kp MINUS       &kp N1    &kp N2        &kp N3     &kp N4        &kp N5                    &kp F1         &kp F2         &kp F3  &kp F4   &kp F5   &kp F6
 &kp LS(PLUS)    &kp N6    &kp N7        &kp N8     &kp N9        &kp N0                    &kp F7         &kp F8         &kp F9  &kp F10  &kp F11  &kp F12
 &kp LEFT_SHIFT  &kp FSLH  &kp LS(STAR)  &kp EQUAL  &kp LS(PLUS)  &kp MINUS  &none  &tog 4  &kp LS(PRCNT)  &none          &none   &none    &none    &trans
-&none           &none     &none         &kp TAB    &trans        &trans                    &trans         &kp BACKSPACE  &trans  &none    &none    &none
+&none           &none     &none         &trans     &trans        &trans                    &trans         &kp BACKSPACE  &trans  &none    &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
