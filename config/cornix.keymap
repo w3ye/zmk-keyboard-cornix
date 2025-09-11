@@ -287,7 +287,7 @@
             bindings = <
 &trans  &kt LG(Q)  &mt LG(LS(NUMBER_2)) LG(W)  &trans               &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))  &kp LG(LS(N5))                         &trans                   &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(A)  &trans                      &trans               &trans                                     &trans                                 &trans                   &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(Z)  &trans                      &mt LG(LS(C)) LG(C)  &trans                                     &trans                 &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &trans                      &mt LG(LS(C)) LG(C)  &kp LG(V)                                  &trans                 &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans                      &trans               &kp LG(SPACE)                              &kp LG(LS(LC(SPACE)))                  &trans                   &trans  &trans  &trans  &trans  &trans
             >;
         };
