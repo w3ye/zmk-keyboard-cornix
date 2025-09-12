@@ -237,7 +237,7 @@
             bindings = <
 &tog 0  &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP                    &trans      &trans        &trans           &trans      &trans  &kp C_MUTE
 &tog 1  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN                  &kp LEFT    &kp DOWN      &kp UP           &kp RIGHT   &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &kp INSERT     &trans  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans  &trans
+&tog 2  &trans  &trans    &trans    &trans     &kp INSERT     &trans  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans  &trans
 &trans  &trans  &trans    &trans    &trans     &trans                         &trans      &trans        &trans           &trans      &trans  &trans
             >;
 
