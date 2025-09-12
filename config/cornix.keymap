@@ -169,12 +169,6 @@
             key-positions = <15 16 42>;
             layers = <1>;
         };
-
-        alt+tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <16 17>;
-            layers = <1>;
-        };
     };
 
     keymap {
