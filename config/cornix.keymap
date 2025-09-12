@@ -169,6 +169,18 @@
             key-positions = <15 16 42>;
             layers = <1>;
         };
+
+        alt+delete {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <19 45>;
+            layers = <1>;
+        };
+
+        cmd+delete {
+            bindings = <&kp LG(BACKSPACE)>;
+            key-positions = <20 45>;
+            layers = <1>;
+        };
     };
 
     keymap {
