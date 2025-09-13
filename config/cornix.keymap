@@ -124,7 +124,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
+            key-positions = <16 41>;
             layers = <1 2 0>;
         };
 
