@@ -191,7 +191,9 @@
 &mo 8      &kp LGUI  &kp LALT  &lt 5 ESCAPE  &kp SPACE  &kp TAB                  &kp ENTER  &kp BSPC  &mo 4      &kp RIGHT_ALT  &kp RIGHT_GUI  &tog 1
             >;
 
-            sensor-bindings = <&inc_dec_kp H L>, <&inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>,
+                <&inc_dec_kp C_NEXT C_PREV>;
         };
 
         Homerow {
