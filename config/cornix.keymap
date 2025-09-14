@@ -166,7 +166,7 @@
 
         sl-macshortcut {
             bindings = <&sl 7>;
-            key-positions = <16 17>;
+            key-positions = <1 2>;
             layers = <1>;
         };
 
@@ -174,6 +174,42 @@
             bindings = <&kt CAPSLOCK>;
             key-positions = <13 14 19>;
             layers = <0 1 2>;
+        };
+
+        left-parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 17>;
+            layers = <1 2>;
+        };
+
+        right-parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <19 18>;
+            layers = <1 2>;
+        };
+
+        left-bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <17 15>;
+            layers = <1 2>;
+        };
+
+        right-bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 20>;
+            layers = <1 2>;
+        };
+
+        left-brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <17 14>;
+            layers = <1 2>;
+        };
+
+        right-brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <18 21>;
+            layers = <1 2>;
         };
     };
 
