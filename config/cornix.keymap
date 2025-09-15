@@ -118,7 +118,7 @@
 
         tog_mix {
             bindings = <&tog 5>;
-            key-positions = <6 7>;
+            key-positions = <18 44>;
             layers = <1 0 5 2>;
         };
 
@@ -130,7 +130,7 @@
 
         tog_symb {
             bindings = <&tog 4>;
-            key-positions = <6 8>;
+            key-positions = <19 44>;
             layers = <1 0 4 2>;
         };
 
@@ -209,12 +209,6 @@
         right-brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <33 34>;
-            layers = <1 2>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <17 18>;
             layers = <1 2>;
         };
     };
