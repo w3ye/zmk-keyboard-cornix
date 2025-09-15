@@ -172,43 +172,43 @@
 
         caps {
             bindings = <&kt CAPSLOCK>;
-            key-positions = <13 14 19>;
+            key-positions = <1 2 7>;
             layers = <0 1 2>;
         };
 
         left-parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
             layers = <1 2>;
         };
 
         right-parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <19 18>;
+            key-positions = <19 20>;
             layers = <1 2>;
         };
 
         left-bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <17 15>;
+            key-positions = <4 3>;
             layers = <1 2>;
         };
 
         right-bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <18 20>;
+            key-positions = <7 8>;
             layers = <1 2>;
         };
 
         left-brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <17 14>;
+            key-positions = <28 27>;
             layers = <1 2>;
         };
 
         right-brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <18 21>;
+            key-positions = <33 34>;
             layers = <1 2>;
         };
     };
