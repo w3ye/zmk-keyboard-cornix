@@ -211,6 +211,12 @@
             key-positions = <33 34>;
             layers = <1 2>;
         };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <17 18>;
+            layers = <1 2>;
+        };
     };
 
     keymap {
