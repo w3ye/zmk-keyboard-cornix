@@ -239,7 +239,7 @@
         };
 
         Homerow {
-            display-name = "homerow";
+            display-name = "win_homerow";
             bindings = <
 &kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 8 DELETE
 &kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
