@@ -213,6 +213,71 @@
         };
     };
 
+    macros {
+        commit_next: commit_next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT &kp H>;
+            label = "COMMIT_NEXT";
+        };
+
+        commit_prev: commit_prev {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp H>;
+            label = "COMMIT_PREV";
+        };
+
+        error_next: error_next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT &kp E>;
+            label = "ERROR_NEXT";
+        };
+
+        error_prev: error_prev {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp E>;
+            label = "ERROR_PREV";
+        };
+
+        grep_file_global: grep_file_global {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp F &kp LS(F)>;
+            label = "GREP_FILE_GLOBAL";
+        };
+
+        grep_global: grep_global {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp S &kp LS(G)>;
+            label = "GREP_GLOBAL";
+        };
+
+        grep_word: grep_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp S &kp LS(W)>;
+            label = "GREP_WORD";
+        };
+
+        diagnostic_next: diagnostic_next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT &kp D>;
+            label = "DIAGNOSTIC_NEXT";
+        };
+
+        diagnostic_prev: diagnostic_prev {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp D>;
+            label = "DIAGNOSTIC_PREV";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -227,10 +292,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB    &kp Q     &kp W     &kp E       &kp R      &kp T                          &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 8 DEL
-&kp LCTRL  &kp A     &kp S     &kp D       &kp F      &kp G                          &kp H      &kp J     &kp K      &kp L          &kp SEMI       &kp SQT
-&kp LSHFT  &lt 3 Z   &kp X     &kp C       &kp V      &kp B      &trans  &kp C_MUTE  &kp N      &kp M     &kp COMMA  &kp DOT        &lt 3 SLASH    &kp RSHFT
-&mo 8      &kp LGUI  &kp LALT  &kp ESCAPE  &kp SPACE  &lt 5 TAB                      &kp ENTER  &kp BSPC  &mo 4      &kp RIGHT_ALT  &kp RIGHT_GUI  &tog 1
+&kp ESCAPE  &kp Q     &kp W     &kp E  &kp R      &kp T                        &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 8 DEL
+&kp LCTRL   &kp A     &kp S     &kp D  &kp F      &kp G                        &kp H      &kp J     &kp K      &kp L          &kp SEMI       &kp SQT
+&kp LSHFT   &lt 3 Z   &kp X     &kp C  &kp V      &kp B    &trans  &kp C_MUTE  &kp N      &kp M     &kp COMMA  &kp DOT        &lt 3 SLASH    &kp RSHFT
+&mo 8       &kp LGUI  &kp LALT  &mo 5  &kp SPACE  &kp TAB                      &kp ENTER  &kp BSPC  &mo 4      &kp RIGHT_ALT  &kp RIGHT_GUI  &tog 1
             >;
 
             sensor-bindings =
@@ -351,10 +416,10 @@
 
         Macshortcut {
             bindings = <
-&trans  &trans     &kp LG(LS(NUMBER_2))  &trans               &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))  &kp LG(LS(N5))                         &trans                   &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(A)  &trans                &trans               &trans                                     &trans                                 &trans                   &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(Z)  &trans                &mt LG(LS(C)) LG(C)  &kp LG(V)                                  &trans                 &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans                &trans               &kp LG(SPACE)                              &kp LG(LS(LC(SPACE)))                  &trans                   &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LG(LS(NUMBER_2))  &error_prev          &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))  &kp LG(LS(N5))                         &trans                   &trans      &error_next       &trans  &trans  &trans
+&trans  &kp LG(A)  &trans                &diagnostic_prev     &grep_file_global                          &commit_prev                           &commit_next             &trans      &diagnostic_next  &trans  &trans  &trans
+&trans  &kp LG(Z)  &trans                &mt LG(LS(C)) LG(C)  &kp LG(V)                                  &grep_global           &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &grep_word  &trans            &trans  &trans  &trans
+&trans  &trans     &trans                &trans               &kp LG(SPACE)                              &kp LG(LS(LC(SPACE)))                  &trans                   &trans      &trans            &trans  &trans  &trans
             >;
         };
 
