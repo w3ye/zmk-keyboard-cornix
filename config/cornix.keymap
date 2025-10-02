@@ -418,10 +418,10 @@
 
         Macshortcut {
             bindings = <
-&trans  &trans     &kp LG(LS(NUMBER_2))  &error_prev          &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))  &kp LG(LS(N5))                         &trans                   &trans      &error_next       &trans  &trans  &trans
-&trans  &kp LG(A)  &trans                &diagnostic_prev     &grep_file_global                          &commit_prev                           &commit_next             &trans      &diagnostic_next  &trans  &trans  &trans
-&trans  &kp LG(Z)  &trans                &mt LG(LS(C)) LG(C)  &kp LG(V)                                  &grep_global           &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &grep_word  &trans            &trans  &trans  &trans
-&trans  &trans     &trans                &trans               &kp LG(SPACE)                              &kp LG(LS(LC(SPACE)))                  &mo 9                    &trans      &trans            &trans  &trans  &trans
+&trans  &trans               &kp LG(LS(NUMBER_2))  &error_prev          &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))  &kp LG(LS(N5))                         &trans                   &trans      &error_next       &trans  &trans  &trans
+&trans  &mt LG(LS(A)) LG(A)  &trans                &diagnostic_prev     &grep_file_global                          &commit_prev                           &commit_next             &trans      &diagnostic_next  &trans  &trans  &trans
+&trans  &kp LG(Z)            &trans                &mt LG(LS(C)) LG(C)  &kp LG(V)                                  &grep_global           &trans  &trans  &mt LA(LS(N)) LA(LC(N))  &grep_word  &trans            &trans  &trans  &trans
+&trans  &trans               &trans                &trans               &kp LG(SPACE)                              &kp LG(LS(LC(SPACE)))                  &trans                   &trans      &trans            &trans  &trans  &trans
             >;
         };
 
