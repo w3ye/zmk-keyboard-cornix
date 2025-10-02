@@ -137,31 +137,31 @@
         desktop-1 {
             bindings = <&kp LC(N1)>;
             key-positions = <12 1>;
-            layers = <2>;
+            layers = <1>;
         };
 
         desktop-2 {
             bindings = <&kp LC(NUMBER_2)>;
             key-positions = <12 2>;
-            layers = <2>;
+            layers = <1>;
         };
 
         desktop-3 {
             bindings = <&kp LC(NUMBER_3)>;
             key-positions = <12 3>;
-            layers = <2>;
+            layers = <1>;
         };
 
         desktop-4 {
             bindings = <&kp LC(NUMBER_4)>;
             key-positions = <12 4>;
-            layers = <2>;
+            layers = <1>;
         };
 
         desktop-5 {
             bindings = <&kp LC(N5)>;
             key-positions = <12 5>;
-            layers = <2>;
+            layers = <1>;
         };
 
         sl-macshortcut {
@@ -304,7 +304,7 @@
         };
 
         Homerow {
-            display-name = "win_homerow";
+            display-name = "homerow";
             bindings = <
 &kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                          &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 8 DELETE
 &kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                          &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
@@ -320,7 +320,7 @@
         };
 
         Win {
-            display-name = "homerow";
+            display-name = "win";
             bindings = <
 &kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                        &kp Y      &kp U               &kp I                 &kp O             &kp P                &lt 8 DELETE
 &kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                        &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
