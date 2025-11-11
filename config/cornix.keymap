@@ -108,8 +108,8 @@
         compatible = "zmk,conditional-layers";
 
         system {
-            if-layers = <5 4>;
-            then-layer = <6>;
+            if-layers = <7 6>;
+            then-layer = <8>;
         };
     };
 
@@ -117,9 +117,9 @@
         compatible = "zmk,combos";
 
         tog_mix {
-            bindings = <&tog 5>;
+            bindings = <&tog 7>;
             key-positions = <18 44>;
-            layers = <1 0 5 2>;
+            layers = <1 0 7 2>;
         };
 
         escape {
@@ -129,9 +129,9 @@
         };
 
         tog_symb {
-            bindings = <&tog 4>;
+            bindings = <&tog 6>;
             key-positions = <19 44>;
-            layers = <1 0 4 2>;
+            layers = <1 0 6 2>;
         };
 
         desktop-1 {
@@ -165,7 +165,7 @@
         };
 
         sl-macshortcut {
-            bindings = <&sl 7>;
+            bindings = <&sl 9>;
             key-positions = <1 2>;
             layers = <2>;
         };
@@ -292,10 +292,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE  &kp Q     &kp W     &kp E  &kp R      &kp T                                  &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 8 DEL
+&kp ESCAPE  &kp Q     &kp W     &kp E  &kp R      &kp T                                  &kp Y      &kp U     &kp I      &kp O          &kp P          &lt 10 DEL
 &kp LCTRL   &kp A     &kp S     &kp D  &kp F      &kp G                                  &kp H      &kp J     &kp K      &kp L          &kp SEMI       &kp SQT
-&kp LSHFT   &lt 3 Z   &kp X     &kp C  &kp V      &kp B    &kp C_PLAY_PAUSE  &kp C_MUTE  &kp N      &kp M     &kp COMMA  &kp DOT        &lt 3 SLASH    &kp RSHFT
-&mo 8       &kp LGUI  &kp LALT  &mo 5  &kp SPACE  &kp TAB                                &kp ENTER  &kp BSPC  &mo 4      &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
+&kp LSHFT   &lt 5 Z   &kp X     &kp C  &kp V      &kp B    &kp C_PLAY_PAUSE  &kp C_MUTE  &kp N      &kp M     &kp COMMA  &kp DOT        &lt 5 SLASH    &kp RSHFT
+&mo 10      &kp LGUI  &kp LALT  &mo 7  &kp SPACE  &kp TAB                                &kp ENTER  &kp BSPC  &mo 6      &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
             >;
 
             sensor-bindings =
@@ -306,10 +306,10 @@
         Homerow {
             display-name = "homerow";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                          &kp Y        &kp U               &kp I                 &kp O             &kp P                &lt 8 DELETE
-&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                          &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &lt 3 Z          &kp X            &kp C                &kp V              &kp B      &trans  &kp C_MUTE  &kp N        &kp M               &kp COMMA             &kp DOT           &lt 3 SLASH          &kp RSHFT
-&sl 8      &kp LGUI         &kp LALT         &lt 5 ESCAPE         &kp SPACE          &lt 7 TAB                      &lt 9 ENTER  &mac_bksp           &mo 4                 &kp RIGHT_ALT     &kp RIGHT_GUI        &mo 9
+&kp ESCAPE  &kp Q            &kp W            &kp E                &kp R              &kp T                          &kp Y         &kp U               &kp I                 &kp O             &kp P                &lt 10 DELETE
+&kp LCTRL   &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                          &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT   &lt 5 Z          &kp X            &kp C                &kp V              &kp B      &trans  &kp C_MUTE  &kp N         &kp M               &kp COMMA             &kp DOT           &lt 5 SLASH          &kp RSHFT
+&sl 10      &kp LGUI         &kp LALT         &lt 7 ESCAPE         &kp SPACE          &lt 9 TAB                      &lt 11 ENTER  &mac_bksp           &mo 6                 &kp RIGHT_ALT     &kp RIGHT_GUI        &mo 11
             >;
 
             sensor-bindings =
@@ -322,10 +322,10 @@
         Win {
             display-name = "win";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R              &kp T                        &kp Y      &kp U               &kp I                 &kp O             &kp P                &lt 8 DELETE
-&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                        &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT  &lt 3 Z          &kp X            &kp C                &kp V              &kp B    &trans  &kp C_MUTE  &kp N      &kp M               &kp COMMA             &kp DOT           &lt 3 SLASH          &kp RSHFT
-&sl 8      &kp LGUI         &kp LALT         &lt 5 ESCAPE         &kp SPACE          &kp TAB                      &kp ENTER  &kp BACKSPACE       &mo 4                 &kp RIGHT_ALT     &kp RIGHT_GUI        &trans
+&kp ESCAPE  &kp Q            &kp W            &kp E                &kp R              &kp T                        &kp Y      &kp U               &kp I                 &kp O             &kp P                &lt 10 DELETE
+&kp LCTRL   &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                        &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT   &lt 5 Z          &kp X            &kp C                &kp V              &kp B    &trans  &kp C_MUTE  &kp N      &kp M               &kp COMMA             &kp DOT           &lt 5 SLASH          &kp RSHFT
+&sl 10      &kp LGUI         &kp LALT         &lt 7 ESCAPE         &kp SPACE          &kp TAB                      &kp ENTER  &kp BACKSPACE       &mo 6                 &kp RIGHT_ALT     &kp RIGHT_GUI        &trans
             >;
 
             sensor-bindings =
@@ -333,6 +333,32 @@
                 <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
 
             label = "Win";
+        };
+
+        colemak-dh {
+            bindings = <
+&kp ESC    &kp Q     &kp W     &kp F  &kp P      &kp B                    &kp J      &kp L          &kp U      &kp Y     &kp SEMI  &kp DEL
+&kp LCTRL  &kp A     &kp R     &kp S  &kp T      &kp G                    &kp M      &kp N          &kp E      &kp I     &kp O     &kp SQT
+&kp LSHFT  &kp Z     &kp X     &kp C  &kp D      &kp V    &trans  &trans  &kp K      &kp H          &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 10     &kp LGUI  &kp LALT  &mo 7  &kp SPACE  &kp TAB                  &kp ENTER  &kp BACKSPACE  &mo 6      &kp RALT  &kp RGUI  &trans
+            >;
+
+            label = "colemak-base";
+        };
+
+        colemak_mac {
+            label = "colemak-mac";
+            display-name = "homerow";
+            bindings = <
+&kp ESCAPE  &kp Q            &kp W            &kp F                &kp P              &kp B                          &kp J         &kp L               &kp U                 &kp Y             &kp SEMI          &lt 10 DELETE
+&kp LCTRL   &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G                          &kp M         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp SQT
+&kp LSHFT   &lt 5 Z          &kp X            &kp C                &kp D              &kp V      &trans  &kp C_MUTE  &kp K         &kp H               &kp COMMA             &kp DOT           &lt 5 SLASH       &kp RSHFT
+&sl 10      &kp LGUI         &kp LALT         &lt 7 ESCAPE         &kp SPACE          &lt 9 TAB                      &lt 11 ENTER  &mac_bksp           &mo 6                 &kp RIGHT_ALT     &kp RIGHT_GUI     &mo 11
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_NEXT C_PREVIOUS>,
+                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         Nav {
@@ -449,17 +475,6 @@
             >;
 
             label = "mac2";
-        };
-
-        colemak-dh {
-            bindings = <
-&kp ESC    &kp Q     &kp W     &kp F  &kp P      &kp B                    &kp J      &kp L          &kp U      &kp Y     &kp SEMI  &kp DEL
-&kp LCTRL  &kp A     &kp R     &kp S  &kp T      &kp G                    &kp M      &kp N          &kp E      &kp I     &kp O     &kp SQT
-&kp LSHFT  &kp Z     &kp X     &kp C  &kp D      &kp V    &trans  &trans  &kp K      &kp H          &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 8      &kp LGUI  &kp LALT  &mo 5  &kp SPACE  &kp TAB                  &kp ENTER  &kp BACKSPACE  &mo 4      &kp RALT  &kp RGUI  &trans
-            >;
-
-            label = "colemak-base";
         };
     };
 };
