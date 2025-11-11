@@ -450,5 +450,16 @@
 
             label = "mac2";
         };
+
+        colemak-dh {
+            bindings = <
+&kp ESC    &kp Q     &kp W     &kp F  &kp P      &kp B                    &kp J      &kp L          &kp U      &kp Y     &kp SEMI  &kp DEL
+&kp LCTRL  &kp A     &kp R     &kp S  &kp T      &kp G                    &kp M      &kp N          &kp E      &kp I     &kp O     &kp SQT
+&kp LSHFT  &kp Z     &kp X     &kp C  &kp D      &kp V    &trans  &trans  &kp K      &kp H          &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 8      &kp LGUI  &kp LALT  &mo 5  &kp SPACE  &kp TAB                  &kp ENTER  &kp BACKSPACE  &mo 4      &kp RALT  &kp RGUI  &trans
+            >;
+
+            label = "colemak-base";
+        };
     };
 };
