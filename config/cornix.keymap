@@ -119,97 +119,97 @@
         tog_mix {
             bindings = <&tog 7>;
             key-positions = <18 44>;
-            layers = <1 0 7 2>;
+            layers = <1 0 7 2 3 4>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 41>;
-            layers = <1 2 0>;
+            layers = <1 2 0 3 4>;
         };
 
         tog_symb {
             bindings = <&tog 6>;
             key-positions = <19 44>;
-            layers = <1 0 6 2>;
+            layers = <1 0 6 2 3 4>;
         };
 
         desktop-1 {
             bindings = <&kp LC(N1)>;
             key-positions = <12 1>;
-            layers = <1>;
+            layers = <1 4>;
         };
 
         desktop-2 {
             bindings = <&kp LC(NUMBER_2)>;
             key-positions = <12 2>;
-            layers = <1>;
+            layers = <1 4>;
         };
 
         desktop-3 {
             bindings = <&kp LC(NUMBER_3)>;
             key-positions = <12 3>;
-            layers = <1>;
+            layers = <1 4>;
         };
 
         desktop-4 {
             bindings = <&kp LC(NUMBER_4)>;
             key-positions = <12 4>;
-            layers = <1>;
+            layers = <1 4>;
         };
 
         desktop-5 {
             bindings = <&kp LC(N5)>;
             key-positions = <12 5>;
-            layers = <1>;
+            layers = <1 4>;
         };
 
         sl-macshortcut {
             bindings = <&sl 9>;
             key-positions = <1 2>;
-            layers = <2>;
+            layers = <2 4>;
         };
 
         caps {
             bindings = <&kt CAPSLOCK>;
             key-positions = <1 2 7>;
-            layers = <0 1 2>;
+            layers = <0 1 2 4 3>;
         };
 
         left-parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 15>;
-            layers = <1 2>;
+            layers = <1 2 4>;
         };
 
         right-parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
-            layers = <1 2>;
+            layers = <1 2 4>;
         };
 
         left-bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <4 3>;
-            layers = <1 2>;
+            layers = <1 2 4>;
         };
 
         right-bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 8>;
-            layers = <1 2>;
+            layers = <1 2 4>;
         };
 
         left-brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <28 27>;
-            layers = <1 2>;
+            layers = <1 2 4>;
         };
 
         right-brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <33 34>;
-            layers = <1 2>;
+            layers = <1 2 4>;
         };
     };
 
@@ -336,7 +336,7 @@
         };
 
         colemak-dh {
-            display-name="colemak"
+            display-name = "colemak";
             bindings = <
 &kp ESC    &kp Q     &kp W     &kp F  &kp P      &kp B                    &kp J      &kp L          &kp U      &kp Y     &kp SEMI     &kp DEL
 &kp LCTRL  &kp A     &kp R     &kp S  &kp T      &kp G                    &kp M      &kp N          &kp E      &kp I     &kp O        &kp SQT
