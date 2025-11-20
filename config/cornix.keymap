@@ -336,6 +336,7 @@
         };
 
         colemak-dh {
+            display-name="colemak"
             bindings = <
 &kp ESC    &kp Q     &kp W     &kp F  &kp P      &kp B                    &kp J      &kp L          &kp U      &kp Y     &kp SEMI     &kp DEL
 &kp LCTRL  &kp A     &kp R     &kp S  &kp T      &kp G                    &kp M      &kp N          &kp E      &kp I     &kp O        &kp SQT
@@ -348,7 +349,7 @@
 
         colemak_mac {
             label = "colemak-mac";
-            display-name = "homerow";
+            display-name = "colemakHomerow";
             bindings = <
 &kp ESCAPE  &kp Q            &kp W            &kp F                &kp P              &kp B                          &kp J         &kp L               &kp U                 &kp Y             &kp SEMI          &lt 10 DELETE
 &kp LCTRL   &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G                          &kp M         &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp SQT
