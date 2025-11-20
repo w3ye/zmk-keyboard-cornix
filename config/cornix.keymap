@@ -164,12 +164,6 @@
             layers = <1 4>;
         };
 
-        sl-macshortcut {
-            bindings = <&sl 9>;
-            key-positions = <1 2>;
-            layers = <2 4>;
-        };
-
         caps {
             bindings = <&kt CAPSLOCK>;
             key-positions = <1 2 7>;
