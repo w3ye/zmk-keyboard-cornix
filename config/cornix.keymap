@@ -166,7 +166,7 @@
 
         caps {
             bindings = <&kt CAPSLOCK>;
-            key-positions = <1 2 7>;
+            key-positions = <24 37>;
             layers = <0 1>;
         };
 
